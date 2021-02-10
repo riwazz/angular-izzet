@@ -1,0 +1,50 @@
+<header id="header">
+  <div class="container">
+    <div id="logo" class="pull-left">
+      <h1><a [routerLink]="['/dosyalar']" class="scrollto">İzzetgram</a></h1>
+    </div>
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a [routerLink]="['/dosyalar']">Anasayfa</a></li>
+        <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" href="">Giriş Yap</a></li>
+        <li><a [routerLink]="['/register']" routerLinkActive="router-link-active" href="">Kayıt Ol</a></li>
+    </ul>
+    </nav>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<footer>
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h5><b>İzzetgram</b></h5>
+          <ul class="list-unstyled quick-links">
+            <li><a [routerLink]="['/dosyalar']"><i class="fa fa-angle-double-right"></i>Anasayfa</a></li>
+            <li><a [routerLink]="['/dosyalar']"><i class="fa fa-angle-double-right"></i>Bana Ulaşın</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.facebook.com/sisman.izzet/"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/izzet_sisman_"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/izzet_sisman_/">
+		    <i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="http://izzetsisman.me/">İzzet Şişman</a></u> 2020-2021 Bilgisayar Programcılığı Akdeniz
+            Üniversitesi</p>
+          <p class="h6">© Bütün hakları saklıdır.<a class="text-green ml-2" href="http://izzetsisman.me" target="_blank">İzzetgram</a></p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+</footer>
